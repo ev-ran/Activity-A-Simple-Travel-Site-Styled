@@ -75,9 +75,10 @@ target the elements with a class of page-row and set the following properties:
   color:black;
 }
 .card a {
-  color: blue;
+  /*color: blue;*/
   
   text-decoration: underline;
+  color: black;
 }
 /*+++++++++++ centralize elements with id="header-statement"*/
 
@@ -100,7 +101,7 @@ target the elements with a class of card and set the following properties:
  content area
  - background to not repeat
 */
-#spain {
+.card {
   width: 20%;
   height: 300px;
   margin: 2.5%;
@@ -109,54 +110,10 @@ target the elements with a class of card and set the following properties:
   background-color: white;
   text-align: center;
   color: black;
-  background-image: url(../images/spain_flag.svg);
   background-size: contain;
   background-repeat: no-repeat;
   border: 1px solid  #6495ED;
 }
-#italy {
-  width: 20%;
-  height: 300px;
-  margin: 2.5%;
-  padding-top: 15%;
-  float: left;
-  background-color: white;
-  text-align: center;
-  color: black;
-  background-image: url(../images/italy_flag.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  border: 1px solid  #6495ED;
-}
-#aruba {
-  width: 20%;
-  height: 300px;
-  margin: 2.5%;
-  padding-top: 15%;
-  float: left;
-  background-color: white;
-  text-align: center;
-  color: black;
-  background-image: url(../images/aruba_flag.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  border: 1px solid  #6495ED;
-}
-#chile {
-  width: 20%;
-  height: 300px;
-  margin: 2.5%;
-  padding-top: 15%;
-  float: left;
-  background-color: white;
-  text-align: center;
-  color: black;
-  background-image: url(../images/chile_flag.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  border: 1px solid  #6495ED;
-}
-
  
 /*
 target the element with the id of hero and set the following properties
@@ -175,6 +132,7 @@ target the element with the id of hero and set the following properties
   background-size: cover;
   background-size: 100% ;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 
@@ -182,28 +140,33 @@ target the element with the id of hero and set the following properties
 target the element with the class of card that also has an id of spain
  - set the background image to (spain_flag.svg) in our assets/images directory
 */
-/*==============================*/
+#spain {
+  background-image: url(../images/spain_flag.svg);
+}
 
 /*
 target the element with the class of card that also has an id of italy
 - set the background image to (italy_flag.svg) in our assets/images directory
 */
 
-/*==============================*/
-
+#italy {
+  background-image: url(../images/italy_flag.svg);
+}
 /*
 target the element with the class of card that also has an id of aruba
 - set the background image to (aruba_flag.svg) in our assets/images directory
 */
-
-/*==============================*/
-
+ #aruba {
+background-image: url(../images/aruba_flag.svg);
+}
 /*
 target the element with the class of card that also has an id of chile
 - set the background image to (chile_flag.svg) in our assets/images directory
 */
 
-/*==============================*/
+#chile {
+  background-image: url(../images/chile_flag.svg);
+}
 
 /*
  target the header element and set the following properties:
